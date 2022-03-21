@@ -1,7 +1,7 @@
 
 # PROGRAM:    Assignment 2
 # PROGRAMMER: Michael Marchetti
-# LOGON ID:   *omitted*
+# LOGON ID:   z1860574
 # DATE DUE:   9/9/2021
 #
 
