@@ -1,0 +1,12 @@
+*** Testing default constructor ***
+
+*** Testing size(), operator<<(), and empty() with empty list ***
+
+l1 (size 0): 
+l1 is empty
+
+*** Testing push_back() into empty list ***
+
+*** Testing size(), operator<<(), and empty() with non-empty list ***
+
+l1 (size 1): 40 
