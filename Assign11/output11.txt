@@ -1,0 +1,438 @@
+*** Testing default constructor ***
+
+*** Testing size(), height(), empty(), and find() for empty tree ***
+
+t1.size(): 0
+t1.height(): 0
+t1 is empty
+56 not found
+
+*** Testing traversals of empty tree ***
+
+t1 preorder:
+
+
+t1 inorder:
+
+
+t1 postorder:
+
+
+t1 level order:
+
+
+*** Testing insertion of root node ***
+
+*** Testing size(), height(), empty(), min(), max(), and find() for tree with one node ***
+
+t1.size(): 1
+t1.height(): 1
+t1 is not empty
+Minimum key: 56
+Maximum key: 56
+
+56 found, value: 7.50
+39 not found
+
+*** Testing traversals of tree with one node ***
+
+t1 preorder:
+
+56: 7.50
+
+t1 inorder:
+
+56: 7.50
+
+t1 postorder:
+
+56: 7.50
+
+t1 level order:
+
+56: 7.50
+
+*** Testing insertion of additional nodes ***
+
+*** Testing size(), height(), empty(), min(), max(), and find() ***
+
+t1.size(): 9
+t1.height(): 4
+t1 is not empty
+Minimum key: 21
+Maximum key: 86
+
+56 found, value: 7.50
+39 found, value: 8.99
+65 not found
+
+*** Testing traversals of tree ***
+
+t1 preorder:
+
+56: 7.50
+34: 2.27
+21: 5.12
+45: 3.91
+39: 8.99
+68: 6.49
+62: 1.00
+74: 7.03
+86: 9.74
+
+t1 inorder:
+
+21: 5.12
+34: 2.27
+39: 8.99
+45: 3.91
+56: 7.50
+62: 1.00
+68: 6.49
+74: 7.03
+86: 9.74
+
+t1 postorder:
+
+21: 5.12
+39: 8.99
+45: 3.91
+34: 2.27
+62: 1.00
+86: 9.74
+74: 7.03
+68: 6.49
+56: 7.50
+
+t2 level order:
+
+56: 7.50
+34: 2.27
+68: 6.49
+21: 5.12
+45: 3.91
+62: 1.00
+74: 7.03
+39: 8.99
+86: 9.74
+
+*** Testing insertion of duplicate key ***
+
+Failure
+t1.size(): 9
+
+*** Testing const correctness ***
+
+t2.size(): 9
+t2.height(): 4
+t2 is not empty
+Minimum key: 21
+Maximum key: 86
+
+39 found, value: 8.99
+
+t2 preorder:
+
+56: 7.50
+34: 2.27
+21: 5.12
+45: 3.91
+39: 8.99
+68: 6.49
+62: 1.00
+74: 7.03
+86: 9.74
+
+t2 inorder:
+
+21: 5.12
+34: 2.27
+39: 8.99
+45: 3.91
+56: 7.50
+62: 1.00
+68: 6.49
+74: 7.03
+86: 9.74
+
+t2 postorder:
+
+21: 5.12
+39: 8.99
+45: 3.91
+34: 2.27
+62: 1.00
+86: 9.74
+74: 7.03
+68: 6.49
+56: 7.50
+
+t2 level order:
+
+56: 7.50
+34: 2.27
+68: 6.49
+21: 5.12
+45: 3.91
+62: 1.00
+74: 7.03
+39: 8.99
+86: 9.74
+
+*** Testing copy constructor ***
+
+t3.size(): 9
+t3.height(): 4
+
+t3 preorder:
+
+56: 7.50
+34: 2.27
+21: 5.12
+45: 3.91
+39: 8.99
+68: 6.49
+62: 1.00
+74: 7.03
+86: 9.74
+
+t3 inorder:
+
+21: 5.12
+34: 2.27
+39: 8.99
+45: 3.91
+56: 7.50
+62: 1.00
+68: 6.49
+74: 7.03
+86: 9.74
+
+*** Testing clear() ***
+
+t3.size(): 0
+t3.height(): 0
+
+*** Testing for shallow copy ***
+
+t1.size(): 9
+t1.height(): 4
+
+*** Testing copy assignment operator ***
+
+t5.size(): 9
+t5.height(): 4
+
+t5 preorder:
+
+56: 7.50
+34: 2.27
+21: 5.12
+45: 3.91
+39: 8.99
+68: 6.49
+62: 1.00
+74: 7.03
+86: 9.74
+
+t5 inorder:
+
+21: 5.12
+34: 2.27
+39: 8.99
+45: 3.91
+56: 7.50
+62: 1.00
+68: 6.49
+74: 7.03
+86: 9.74
+
+*** Testing assignment to self ***
+
+t1.size(): 9
+t1.height(): 4
+
+*** Testing chained assignment ***
+
+t6.size(): 3
+t6.height(): 3
+
+t6 preorder:
+
+8: 1.00
+10: 2.00
+27: 3.00
+
+t6 inorder:
+
+8: 1.00
+10: 2.00
+27: 3.00
+
+t6.size(): 9
+t6.height(): 4
+
+t6 preorder:
+
+56: 7.50
+34: 2.27
+21: 5.12
+45: 3.91
+39: 8.99
+68: 6.49
+62: 1.00
+74: 7.03
+86: 9.74
+
+t6 inorder:
+
+21: 5.12
+34: 2.27
+39: 8.99
+45: 3.91
+56: 7.50
+62: 1.00
+68: 6.49
+74: 7.03
+86: 9.74
+
+*** Testing removal of non-existent node ***
+
+Failure
+t1.size(): 9
+
+*** Testing removal of node with no children ***
+
+Success
+t1.size(): 8
+
+t1 preorder:
+
+56: 7.50
+34: 2.27
+45: 3.91
+39: 8.99
+68: 6.49
+62: 1.00
+74: 7.03
+86: 9.74
+
+t1 inorder:
+
+34: 2.27
+39: 8.99
+45: 3.91
+56: 7.50
+62: 1.00
+68: 6.49
+74: 7.03
+86: 9.74
+
+*** Testing removal of node with only right child ***
+
+Success
+t3.size(): 8
+
+t3 preorder: 
+
+56: 7.50
+34: 2.27
+21: 5.12
+45: 3.91
+39: 8.99
+68: 6.49
+62: 1.00
+86: 9.74
+
+t3 inorder: 
+
+21: 5.12
+34: 2.27
+39: 8.99
+45: 3.91
+56: 7.50
+62: 1.00
+68: 6.49
+86: 9.74
+
+*** Testing removal of node with only left child ***
+
+Success
+t4.size(): 8
+
+t4 preorder: 
+
+56: 7.50
+34: 2.27
+21: 5.12
+39: 8.99
+68: 6.49
+62: 1.00
+74: 7.03
+86: 9.74
+
+t4 inorder: 
+
+21: 5.12
+34: 2.27
+39: 8.99
+56: 7.50
+62: 1.00
+68: 6.49
+74: 7.03
+86: 9.74
+
+*** Testing removal of node with two children ***
+
+Success
+t5.size(): 8
+
+t5 preorder: 
+
+56: 7.50
+34: 2.27
+21: 5.12
+45: 3.91
+39: 8.99
+62: 1.00
+74: 7.03
+86: 9.74
+
+t5 inorder: 
+
+21: 5.12
+34: 2.27
+39: 8.99
+45: 3.91
+56: 7.50
+62: 1.00
+74: 7.03
+86: 9.74
+
+*** Testing removal of root node with two children ***
+
+Success
+t6.size(): 8
+
+t6 preorder: 
+
+45: 3.91
+34: 2.27
+21: 5.12
+39: 8.99
+68: 6.49
+62: 1.00
+74: 7.03
+86: 9.74
+
+t6 inorder: 
+
+21: 5.12
+34: 2.27
+39: 8.99
+45: 3.91
+62: 1.00
+68: 6.49
+74: 7.03
+86: 9.74
+
